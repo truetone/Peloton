@@ -1,0 +1,22 @@
+{
+    "name": "thoma127/peloton",
+    "description": "A fast, secure, minimal PHP application for content-focused websites",
+    "type": "library",
+    "require": {
+        "klein/klein": "^2.1",
+        "twig/twig": "~1.0",
+        "guzzlehttp/guzzle": "~6.0",
+        "symfony/yaml": "^3.1",
+        "thoma127/dict": "^0.1.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.2"
+    },
+    "license": "GPL 3.0",
+    "authors": [
+        {
+            "name": "Tony Thomas",
+            "email": "thoma127@umn.edu"
+        }
+    ]
+}
