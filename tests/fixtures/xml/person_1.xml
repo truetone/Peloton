@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Created with xmlDocument class-->
+<People totalCount="1">
+  <person>
+    <count>1</count>
+    <name>Last,First I</name>
+    <internetId>internetid</internetId>
+    <lastName>Last</lastName>
+    <firstName>First</firstName>
+    <middleName>I</middleName>
+    <nameSuffix> </nameSuffix>
+    <phone>612/123-4567</phone>
+    <fax>
+    </fax>
+    <addr1>Address 1</addr1>
+    <addr2>Address 2</addr2>
+    <addr3> </addr3>
+    <addr4> </addr4>
+    <city>Minneapolis</city>
+    <state>MN</state>
+    <zip>55455-0364</zip>
+    <jobs>
+      <job>
+        <deptId>12345</deptId>
+        <deptIdDescr>Dept. Description</deptIdDescr>
+        <umZDeptId>Z0123</umZDeptId>
+        <umZDeptIdDescr>Department Description</umZDeptIdDescr>
+        <jobStatus>Active</jobStatus>
+        <jobCodeDescr>Job Description</jobCodeDescr>
+      </job>
+    </jobs>
+    <workingTitle>Working title</workingTitle>
+    <areasOfInterest>Areas of interest
+
+</areasOfInterest>
+    <degrees>Ph.D., In something</degrees>
+    <officeHours>
+    </officeHours>
+    <headshotAddr>http://example.com/headshot.jpg</headshotAddr>
+    <webPage>
+    </webPage>
+    <curriculumVitaeAddr>
+    </curriculumVitaeAddr>
+    <twitterName>
+    </twitterName>
+    <expertise>
+    </expertise>
+    <briefBio>&lt;p&gt;
+        Brief bio
+&lt;p&gt;
+</briefBio>
+    <fullBio>
+    </fullBio>
+    <dateDisplay>February 7, 2017</dateDisplay>
+    <dateISO>2017-02-07</dateISO>
+    <publications>
+        Publication 1
+      <publication>
+    <publications>
+        Publication 2
+      <publication>
+    </publications>
+    <presentations>
+      <presentation>
+      Presentation 1
+</presentation>
+      <presentation>
+      Presentation 2
+</presentation>
+    <tags>
+      <tag tagId="316" tagDescr="Descr" />
+    </tags>
+    <tagGroups>
+      <tagGroup tagGroupId="38" tagGroupAbbr="Group" tagGroupDescr="Group Description" />
+    </tagGroups>
+  </person>
+</People>

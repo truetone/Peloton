@@ -4,6 +4,13 @@ require_once __DIR__ . '/../peloton/src/peloton/Peloton.php';
 
 use PHPUnit\Framework\TestCase;
 
+class MockClass
+{
+    public $attribute_1;
+
+    public $attribute_2;
+}
+
 class PelotonTest extends TestCase
 {
     private $appInstance;
@@ -59,14 +66,13 @@ class PelotonTest extends TestCase
         }
     }
 
-    /*
     public function testAlternateConfig()
     {
         $appConfigFilePath = __DIR__ . '/fixtures/config/app-config.yml';
         $yaConfigFilePath  = __DIR__ . '/fixtures/config/ya-config.yml';
         $navFilePath       = __DIR__ . '/fixtures/nav.yml';
         $routesFilePath    = __DIR__ . '/fixtures/routes.yml';
-        $this->appInstance = new \CEHD\App\App\BaseApp([
+        $appInstance = new \Peloton\Peloton([
             "configs" => [
                 $appConfigFilePath,
                 $yaConfigFilePath,
@@ -75,7 +81,7 @@ class PelotonTest extends TestCase
             "routes" => $routesFilePath,
         ]);
 
-        $this->assertEquals("/new/base/assets", $this->appInstance->config['asset_base']);
+        $this->assertEquals("/new/base/assets", $appInstance->config['asset_base']);
     }
 
     public function testHyphenate()
@@ -118,8 +124,11 @@ class PelotonTest extends TestCase
 
     public function testIsIterable()
     {
-        $xmlStr = file_get_contents(__DIR__ . '/fixtures/xml/person_caberger.xml');
-        $classInstance = new \CEHD\App\People\People($xmlStr);
+        $xmlStr = file_get_contents(__DIR__ . '/fixtures/xml/person_1.xml');
+        $classInstance = new MockClass();
+
+        $classInstance->attribute_1 = "foo";
+        $classInstance->attribute_2 = "bar";
 
         // strings will iterate, but not in a way we expect so we want false
         $this->assertFalse($this->appInstance->isIterable("string"));
@@ -169,7 +178,7 @@ class PelotonTest extends TestCase
 
     public function testBuildHyphenatedKeys()
     {
-        $yamlData = $this->appInstance->loadYaml(__DIR__ . '/fixtures/experts.yml');
+        $yamlData = $this->appInstance->loadYaml(__DIR__ . '/fixtures/yaml.yml');
         $hyphenatedData = $this->appInstance->buildHyphenatedKeys($yamlData);
         $expected = "Education Policy K-12";
         $expected_key = $expected;
@@ -279,5 +288,4 @@ class PelotonTest extends TestCase
         $expected_result = "<p >";
         $this->assertEquals($expected_result, $this->appInstance->stripStyleAttributes($original_tag));
     }
-    */
 }
