@@ -1,5 +1,5 @@
 {
-    "name": "thoma127/peloton",
+    "name": "truetone/peloton",
     "description": "A fast, secure, minimal PHP application for content-focused websites",
     "type": "library",
     "require": {
