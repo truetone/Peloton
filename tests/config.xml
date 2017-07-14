@@ -1,0 +1,10 @@
+<phpunit>
+    <testsuites>
+        <testsuite name="Peloton">
+            <directory suffix='.php'>./tests</directory>
+        </testsuite>
+    </testsuites>
+    <php>
+        <server name="SERVER_NAME" value="backstage.cehd.umn.edu"/>
+    </php>
+</phpunit>

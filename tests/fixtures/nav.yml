@@ -1,0 +1,60 @@
+---
+- name: Home
+  href: /
+  section: home
+- name: Programs & Degrees
+  href: /programs/
+  section: programs-degrees
+  subnav:
+    - name: American Sign Language
+      href: /programs/asl/
+    - name: Counseling & Student Personnel Psychology
+      href: /programs/cspp/
+    - name: Psychological Foundations of Education
+      href: /programs/foundations/
+    - name: Quantitative Methods in Education
+      href: /programs/qme/
+    - name: School Psychology
+      href: /programs/schoolpsych/
+    - name: Special Education
+      href: /programs/specialed/
+    - name: Graduate Minor
+      href: /programs/graduate-minor/
+    - name: Undergraduate Minor
+      href: /programs/minor/
+- name: Current Students
+  href: /current/
+  section: current
+  subnav:
+    - name: Counseling & Student Personnel Psychology
+      href: /current/cspp/
+    - name: Psychological Foundations of Education
+      href: /current/foundations/
+    - name: Quantitative Methods in Education
+      href: /current/qme/
+    - name: School Psychology
+      href: /current/school-psychology/
+    - name: Special Education
+      href: /current/special-ed/
+- name: People
+  href: /people/
+- name: Research
+  href: /research/
+  section: research
+  subnav:
+    - name: Labs
+      href: /research/labs/
+    - name: Topics
+      href: /research/topics/
+    - name: Student Dissertations
+      href: /research/student-dissertations/
+- name: Giving
+  href: /giving/
+- name: Alumni
+  href: /alumni/
+- name: About
+  href: /about/
+  section: about
+  subnav:
+    - name: Diversity & Inclusion
+      href: /about/diversity-inclusion/

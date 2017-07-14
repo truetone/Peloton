@@ -1,0 +1,13 @@
+---
+/:
+  template: cehd/index.html
+  template_data:
+    - section: home
+/about/:
+  template: cehd/about/index.html
+  template_data:
+    - section: about
+/about/diversity/:
+  template: cehd/about/diversity.html
+  template_data:
+    - section: about

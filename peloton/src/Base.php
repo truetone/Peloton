@@ -8,9 +8,9 @@
  * The Base class to hold common methods
  */
 
-namespace CEHD\App;
+namespace Peloton\Base;
 require_once __DIR__ . "/../../vendor/autoload.php";
-require_once __DIR__ . "config/Config.php";
+require_once __DIR__ . "/config/Config.php";
 
 /**
  * Base class
