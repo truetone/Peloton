@@ -21,7 +21,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Peloton\\Peloton": "src"
+            "Peloton\\Peloton\\": "src"
         }
     }
 }
