@@ -18,5 +18,10 @@
             "name": "Tony Thomas",
             "email": "thoma127@umn.edu"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "Peloton\\Peloton": "src"
+        }
+    }
 }
