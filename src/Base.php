@@ -9,7 +9,7 @@
  */
 
 namespace Peloton\Base;
-require_once __DIR__ . "/../../../vendor/autoload.php";
+require_once __DIR__ . "/../../../autoload.php";
 require_once __DIR__ . "/config/Config.php";
 
 /**
@@ -41,15 +41,15 @@ abstract class BaseClass
      * @param boolean $debug - debug mode for Twig
      * @return object Twig_Environment
      */
-    public function bootstrapTwig($debug=false)
+    public function bootstrapTwig($templates_dir, $debug=false)
     {
-        $loader = new \Twig_Loader_Filesystem(__DIR__ . "/../../templates");
-        $twig = new \Twig_Environment($loader, array(
-            "cache" => __DIR__ . "/../../cache",
+        $loader = new \Twig_Loader_Filesystem($templates_dir);
+        $twig = new \Twig_Environment($loader, [
+            "cache" => __DIR__ . "/../../../../cache",
             "auto_reload" => true, // this setting forces the templates to recompile if they are modified
             "debug" => $debug,
             "autoescape" => true,
-        ));
+        ]);
 
         if ($debug)
         {

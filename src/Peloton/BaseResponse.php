@@ -11,7 +11,7 @@
  */
 namespace CEHD\App\Response;
 
-require_once __DIR__ . '/../../../vendor/autoload.php';
+require_once __DIR__ . '/../../../../autoload.php';
 
 /**
  * Custom Response class with extra methods

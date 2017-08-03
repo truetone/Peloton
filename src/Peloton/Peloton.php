@@ -15,7 +15,7 @@ namespace Peloton;
 
 require_once __DIR__ . '/../Base.php';
 require_once __DIR__ . '/BaseResponse.php';
-require_once __DIR__ . '/../../../../vendor/autoload.php';
+require_once __DIR__ . '/../../../../autoload.php';
 
 use Klein;
 use UMN\CEHD\Dict;
@@ -133,7 +133,7 @@ class Peloton extends \Peloton\Base\BaseClass
      * @param mixed[] $file_paths - array of file paths
      * @todo can some of this instantiation be lazily loaded?
      */
-    function __construct($file_paths)
+    function __construct($file_paths, $templates_dir)
     {
         $twig_filters = [
             "hyphenate",
@@ -148,7 +148,7 @@ class Peloton extends \Peloton\Base\BaseClass
         $this->inline_styles = array_key_exists("inline_styles", $this->file_paths) ? file_get_contents($this->file_paths["inline_styles"]) : null;
         $this->inline_svg_styles = array_key_exists("inline_svg_styles", $this->file_paths) ? file_get_contents($this->file_paths["inline_svg_styles"]) : null;
 
-        $twig = $this->bootstrapTwig($this->config['debug']);
+        $twig = $this->bootstrapTwig($templates_dir, $this->config['debug']);
         $twig->addGlobal('config', $this->config);
         $twig->addGlobal('nav_items', $this->nav_items);
         $twig->addGlobal('inline_styles', $this->inline_styles);
