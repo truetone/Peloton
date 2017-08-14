@@ -8,14 +8,12 @@
  * The Base class to hold common methods
  */
 
-namespace Peloton\Base;
-require_once __DIR__ . "/../../../autoload.php";
-require_once __DIR__ . "/config/Config.php";
+namespace Peloton;
 
 /**
  * Base class
  */
-abstract class BaseClass
+abstract class Base
 {
     /**
      * Class properties
@@ -29,7 +27,7 @@ abstract class BaseClass
     protected $_errors = [];
 
     /**
-     * Clears errors
+     * Clears error
      */
     protected function _clearErrors()
     {
@@ -75,7 +73,7 @@ abstract class BaseClass
      */
     public function bootstrapConfig($yaml_file_paths)
     {
-        $config = new \CEHD\App\Config\Config;
+        $config = new Config;
         return $config->load($yaml_file_paths);
     }
 

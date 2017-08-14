@@ -9,8 +9,7 @@
  * @license GPL 3.0
  */
 
-namespace CEHD\App\Config;
-require_once __DIR__ . '/../../../../autoload.php';
+namespace Peloton;
 
 /**
  * The Config class

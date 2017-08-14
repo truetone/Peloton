@@ -13,10 +13,6 @@
  */
 namespace Peloton;
 
-require_once __DIR__ . '/../Base.php';
-require_once __DIR__ . '/BaseResponse.php';
-require_once __DIR__ . '/../../../../autoload.php';
-
 use Klein;
 use UMN\CEHD\Dict;
 
@@ -30,7 +26,7 @@ use UMN\CEHD\Dict;
  *
  * @example routes/routes.php
  */
-class Peloton extends \Peloton\Base\BaseClass
+class Peloton extends Base
 {
     /**
      * Class properties
@@ -162,7 +158,7 @@ class Peloton extends \Peloton\Base\BaseClass
         }
         $this->template = $twig;
 
-        $this->response = new \CEHD\App\Response\BaseResponse();
+        $this->response = new BaseResponse();
         $this->_routes =  new Dict\Dict(
             $this->loadYaml($this->file_paths["routes"]));
 

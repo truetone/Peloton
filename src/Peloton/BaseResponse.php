@@ -9,9 +9,7 @@
  * This holds methods that are convenient for responses
  *
  */
-namespace CEHD\App\Response;
-
-require_once __DIR__ . '/../../../../autoload.php';
+namespace Peloton;
 
 /**
  * Custom Response class with extra methods
