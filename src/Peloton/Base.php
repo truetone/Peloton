@@ -43,7 +43,7 @@ abstract class Base
     {
         $loader = new \Twig_Loader_Filesystem($templates_dir);
         $twig = new \Twig_Environment($loader, [
-            "cache" => __DIR__ . "/../../../../cache",
+            "cache" => __DIR__ . "/../../../../../cache",
             "auto_reload" => true, // this setting forces the templates to recompile if they are modified
             "debug" => $debug,
             "autoescape" => true,
