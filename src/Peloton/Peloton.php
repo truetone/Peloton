@@ -309,8 +309,11 @@ class Peloton extends Base
         );
 
         // build a few more in
-        $config->asset_base = $this->_setSubBasePath(
-            $config, "base_url", "/assets");
+        if (!$config->asset_base)
+        {
+            $config->asset_base = $this->_setSubBasePath(
+                $config, "base_url", "/assets");
+        }
         $config->nunjucks_view_base = $this->_setSubBasePath(
             $config, "asset_base", "/dist/views");
         $config->css_base = $this->_setSubBasePath(
